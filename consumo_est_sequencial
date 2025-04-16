@@ -1,0 +1,23 @@
+Algoritmo "problema_consumo"
+
+Var
+
+      distancia, combustivel, media : real
+
+Inicio
+
+      escreval ("POSTO PB")
+      escreval ("Boa Noite!")
+      escreval
+      escreval ("Digite a distância percorrida: ")
+      leia     (distancia)
+      escreval ("Digite a quantidade de combustível gasto: ")
+      leia     (combustivel)
+      
+      media    <- distancia / combustivel
+      
+      escreval ("Distância percorrida: ", distancia:3:2, " Km.")
+      escreval ("Combustível gasto: ", combustivel:4:3, " Litros.")
+      escreval ("Consumo médio = ", media:4:3, " Litros.")
+
+Fimalgoritmo
