@@ -1,0 +1,23 @@
+Algoritmo "problema_troco"
+
+Var
+
+   preco, valor, troco : real
+   qnt                 : inteiro
+
+Inicio
+
+      escreval ("GAMING STORE")
+      escreval
+      escreval ("Preço unitário: ")
+      leia     (preco)
+      escreval ("N° de unidades: ")
+      leia     (qnt)
+      escreval ("Dinheiro recebido: ")
+      leia     (valor)
+      
+      troco    <- valor - (preco * qnt)
+      
+      escreval ("Troco: ", troco:3:2)
+
+Fimalgoritmo
