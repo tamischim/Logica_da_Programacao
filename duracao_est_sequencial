@@ -1,0 +1,22 @@
+Algoritmo "problema_duracao"
+
+Var
+
+   duracao, resto, hora, minuto, segundo : inteiro
+
+Inicio
+
+      escreval ("PROGRAMA NASA")
+      escreval ("Conversor de tempo")
+      escreval
+      escreval ("Digite a duração em segundos: ")
+      leia     (duracao)
+
+      hora     <- duracao \ 3600
+      resto    <- duracao % 3600
+      minuto   <- resto \ 60
+      segundo  <- duracao % 60
+      
+      escreval ("Tempo em horas, minutos e segundos: ", hora,":", minuto,":", segundo)
+
+Fimalgoritmo
