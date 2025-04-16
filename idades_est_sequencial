@@ -1,0 +1,32 @@
+Algoritmo "problema_idades"
+
+Var
+
+   idade1, idade2 : inteiro
+   media          : real
+   nome1, nome2   : caractere
+
+Inicio
+
+   escreval ("GOVERNO DO BRASIL")
+   escreval ("Programa BPT")
+   escreval
+   escreval ("Digite o nome do solicitante: ")
+   leia     (nome1)
+   escreval ("Digite a idade do solicitante: ")
+   leia     (idade1)
+   escreval ("Digite o nome do solicitado: ")
+   leia     (nome2)
+   escreval ("Digite a idade do solicitado: ")
+   leia     (idade2)
+          
+   media <- (idade1 + idade2) / 2.0
+   
+   escreval ("Dados cadastrados:")
+   escreval ("Nome do solicitante: ", nome1, ".")
+   escreval ("Idade do solicitante: ", idade1, ".")
+   escreval ("Nome do solicitado: ", nome2, ".")
+   escreval ("Idade do solicitado: ", idade2, ".")
+   escreval ("A média de ", nome1, " e ", nome2, " é de ", media, " anos.")
+          
+Fimalgoritmo
