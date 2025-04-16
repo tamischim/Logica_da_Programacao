@@ -1,0 +1,27 @@
+Algoritmo "problema_medidas"
+
+Var
+
+   medidaA, medidaB, medidaC, areaQ, areaTri, areaTra : real
+
+Inicio
+
+      escreval ("CALCULANDO")
+      escreval
+      escreval ("Digite a medida A: ")
+      leia     (medidaA)
+      escreval ("Digite a medida B: " )
+      leia     (medidaB)
+      escreval ("Digite a medida C: ")
+      leia     (medidaC)
+      
+      areaQ    <-  Exp(medidaA, 2.0)
+      areaTri  <-  medidaA * medidaB / 2.0
+      areaTra  <- (medidaA + medidaB)* medidaC / 2.0
+      
+      escreval ("Resultado: ")
+      escreval ("Área do quadrado: ", areaQ:5:4, " m².")
+      escreval ("Área do triângulo: ", areaTri:5:4, " m².")
+      escreval ("Área do Trapézio: ", areaTra:5:4, " m².")
+
+Fimalgoritmo
