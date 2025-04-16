@@ -1,0 +1,27 @@
+Algoritmo "problema_retangulo"
+
+Var
+
+   baseretangulo, alturaretangulo                       : real
+   arearetangulo, perimetroretangulo, diagonalretangulo : real
+
+Inicio
+   
+   escreval ("BRASIL ESCOLA")
+   escreval ("Parâmetros de um retângulo")
+   escreval
+   escreval ("Digite o valor de b: ")
+   leia     (baseretangulo)
+   escreval ("Digite o valor de h: ")
+   leia     (alturaretangulo)
+   
+   arearetangulo      <- baseretangulo * alturaretangulo
+   perimetroretangulo <- 2.0 * (baseretangulo + alturaretangulo)
+   diagonalretangulo  <- RaizQ(Exp(baseretangulo, 2.0) + Exp(alturaretangulo, 2.0))
+   
+   escreval
+   escreval ("Área em metros quadrados: ", arearetangulo:5:4, " m² ")
+   escreval ("Perímetro do retângulo: ", perimetroretangulo:5:4, " m ")
+   escreval ("Diagonal do retângulo: ", diagonalretangulo:5:4, " m ")
+
+Fimalgoritmo
