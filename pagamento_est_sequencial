@@ -1,0 +1,25 @@
+Algoritmo "problema_pagamento"
+
+Var
+
+   nome         : caractere
+   valor, total : real
+   horas        : inteiro
+
+Inicio
+
+      escreval ("RH CONSULTA")
+      escreval ("Bom dia!")
+      escreval
+      escreval ("Digite nome: ")
+      leia     (nome)
+      escreval ("Digite o valor por hora: ")
+      leia     (valor)
+      escreval ("Digite o n° de horas trabalhadas: ")
+      leia     (horas)
+      
+      total <- valor * horas
+      
+      escreval ("O pagamento para ", nome, " deve ser de: R$", total:3:2, ".")
+
+Fimalgoritmo
