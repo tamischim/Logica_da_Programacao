@@ -1,0 +1,18 @@
+Algoritmo "problema_circulo"
+
+Var
+
+   raio, area : real
+
+Inicio
+
+      escreval ("CIRCULANDO")
+      escreval
+      escreval ("Digite o valor de 'r': ")
+      leia     (raio)
+      
+      area     <- Pi * Exp(raio, 2.0)
+      
+      escreval ("Área do círculo: ", area:4:3)
+
+Fimalgoritmo
