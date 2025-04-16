@@ -1,0 +1,26 @@
+Algoritmo "problema_terreno"
+
+Var
+
+   largTerreno, compTerreno, vmquadTerreno, areaTerreno, precoTerreno : real
+
+Inicio
+
+   escreval ("SEULAR IMOBILIARIA")
+   escreval ("Bom dia!")
+   escreval
+   escreval ("Digite a largura do Terreno: ")
+   leia     (largTerreno)
+   escreval ("Digite o comprimento do Terreno: ")
+   leia     (compTerreno)
+   escreval ("Digite o valor do m²: ")
+   leia     (vmquadTerreno)
+   escreval
+   
+   areaTerreno  <- largTerreno * compTerreno
+   precoTerreno <- vmquadTerreno * areaTerreno
+   
+   escreval ("Área total em m²: ", areaTerreno:3:2, " m² ")
+   escreval ("Valor total: R$", precoTerreno:5:2, ".")
+
+Fimalgoritmo
