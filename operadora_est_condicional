@@ -1,0 +1,24 @@
+Algoritmo "problema_operadora"
+
+Var
+
+   minutos :inteiro
+   valor : real
+
+Inicio
+
+      escreval ("VIVO OPERADORA")
+      escreval ("Controle plano básico")
+      escreval
+      escreval ("Digite a quantidade de minutos utilizados: ")
+      leia     (minutos)
+      
+      valor <- 50.0
+
+      se minutos > 100 entao
+         valor <- valor + 2 * (minutos - 100)
+      fimse
+      
+      escreval ("Valor a pagar: R$", valor:4:2)
+
+Fimalgoritmo
