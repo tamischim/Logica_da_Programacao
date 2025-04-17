@@ -1,0 +1,28 @@
+Algoritmo "problema_tempoDeJogo"
+
+Var
+
+   inicial, final, duracao : inteiro
+
+Inicio
+
+      escreval ("DUNGEONS & DRAGONS ONLINE")
+      escreval ("Duração de campanha")
+      escreval
+      escreval ("Hora Inicial: ")
+      leia     (inicial)
+      escreval ("Hora final: ")
+      leia     (final)
+      
+      se final > inicial entao
+      
+         duracao <- final - inicial
+         
+      senao
+         duracao <- 24 - inicial + final
+
+      fimse
+
+      escreval ("A campanha durou ", duracao, " hora(s).")
+
+Fimalgoritmo
