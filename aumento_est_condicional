@@ -3,7 +3,7 @@ Algoritmo "problema_aumento"
 Var
 
    porcentagem                   : inteiro
-   salario, novosalario, aumento : real
+   salario, novoSalario, aumento : real
 
 Inicio
 
