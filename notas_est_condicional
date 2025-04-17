@@ -1,0 +1,34 @@
+Algoritmo "problema_notas"
+
+Var
+
+      nota1, nota2, notaFinal   : real
+      aluno                     : caractere
+
+Inicio
+
+      escreval ("ESCOLA NOTRE-DAME")
+      escreval ("Sistema de notas")
+      escreval
+      escreval ("Digite o nome do aluno: ")
+      leia     (aluno)
+      escreval ("Digite a nota do 1° Semestre: ")
+      leia     (nota1)
+      escreval ("Digite a nota do 2° Semestre: ")
+      leia     (nota2)
+      
+      notafinal <- nota1 + nota2
+      
+      escreval ("Dados do aluno ")
+      escreval ("Nome: ", aluno)
+      escreval ("Nota 1° Semestre: ", nota1)
+      escreval ("Nota 2° Semestre: ", nota2)
+      escreval ("Nota Final: ", notafinal:2:1)
+      
+      se notaFinal >= 60 entao
+        escreval ("APROVADO")
+        senao
+        escreval ("REPROVADO")
+      fimse 
+
+Fimalgoritmo
