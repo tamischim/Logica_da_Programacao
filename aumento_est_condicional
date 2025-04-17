@@ -1,0 +1,44 @@
+Algoritmo "problema_aumento"
+
+Var
+
+   porcentagem                   : inteiro
+   salario, novosalario, aumento : real
+
+Inicio
+
+      escreval ("COMPANHIA DE VIAGENS ENTERPRISE")
+      escreval ("Folha de pagamento - novos salários")
+      escreval
+      escreval ("Digite o salário atual do funcionário: ")
+      leia     (salario)
+
+      se salario <= 1000 entao
+      
+         porcentagem <- 20
+         
+      senao
+         se (salario > 1000) e (salario <= 3000) entao
+
+            porcentagem <- 15
+         
+         senao
+            se (salario > 3000) e (salario <= 8000) entao
+            
+               porcentagem <- 10
+               
+            senao
+                 porcentagem <- 5
+
+           fimse
+         fimse
+      fimse
+      
+         novoSalario <- (salario + (porcentagem / 100 * salario))
+         aumento     <- (novoSalario - salario)
+         
+         escreval ("Novo Salário: R$",novoSalario:4:2)
+         escreval ("Aumento: R$", aumento:4:2)
+         escreval ("Porcentagem: ", porcentagem, "%")
+
+Fimalgoritmo
