@@ -1,0 +1,31 @@
+Algoritmo "problema_temperatura"
+
+Var
+
+   escala : caractere
+   C, F: real
+   
+Inicio
+
+      escreval ("PROGRAMA DE METEREOLOGIA")
+      escreval ("Conversor de temperatura")
+      escreval
+      escreval ("Selecione a escala a ser inserida (C/F): ")
+      leia     (escala)
+      
+      se escala = "F" entao
+         escreval ("Digite a temperatura em Fahrenheit: ")
+         leia     (F)
+         C <- 5.0 / 9.0 * (F - 32.0)
+         escreval ("Temperatura equivalente em Celsius: ", C:4:2)
+         
+      senao
+         se escala = "C" entao
+            escreval ("Digite a temperatura em Celsius: ")
+            leia     (C)
+            F <- 9.0 * C / 5.0 + 32.0
+            escreval ("Temperatura equivalemte em Fahrenheit: ", F:4:2)
+      fimse
+   fimse
+
+Fimalgoritmo
