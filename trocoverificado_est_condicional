@@ -1,0 +1,30 @@
+Algoritmo "problema_trocoVerificado"
+
+Var
+
+   qnt                           : inteiro
+   preco, dinheiro, troco, resto : real
+
+Inicio
+
+      escreval ("MERCADO DO SOL")
+      escreval ("Bom dia!")
+      escreval
+      escreval ("Preço unitário do produto: ")
+      leia     (preco)
+      escreval ("Quantidade comprada: ")
+      leia     (qnt)
+      escreval ("Dinheiro recebido: ")
+      leia     (dinheiro)
+
+      se dinheiro >= (preco * qnt) entao
+         troco <- dinheiro - (preco * qnt)
+         escreval ("TROCO: R$", troco:4:2)
+         
+      senao
+         resto <- (preco * qnt) - dinheiro
+         escreval ("DINHEIRO INSUFICIENTE. FALTAM: R$", resto:4:2)
+         
+      fimse
+
+Fimalgoritmo
