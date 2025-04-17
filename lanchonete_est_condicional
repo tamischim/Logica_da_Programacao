@@ -1,0 +1,35 @@
+Algoritmo "problema_lanchonete"
+
+Var
+
+   codigo, qnt : inteiro
+   valor       : real
+
+Inicio
+
+      escreval ("RESTAURANTE GALPÃO")
+      escreval
+      escreva  ("Código do produto comprado: ")
+      leia     (codigo)
+      
+      escolha codigo
+      caso 1
+        valor <- 5.00
+      caso 2
+        valor <- 3.50
+      caso 3
+        valor <- 4.80
+      caso 4
+        valor <- 8.90
+      caso 5
+        valor <- 7.32
+      fimescolha
+        
+      escreva ("Quantidade comprada: ")
+      leia    (qnt)
+      
+      valor <- valor * qnt
+      
+      escreva ("Valor a pagar: R$", valor:4:2)
+      
+Fimalgoritmo
