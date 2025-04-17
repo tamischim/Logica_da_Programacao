@@ -1,0 +1,23 @@
+Algoritmo "problema_multiplos"
+
+Var
+
+   x, y : inteiro
+
+Inicio
+
+      escreval ("BRASIL ESCOLA")
+      escreval ("Valores multiplos")
+      escreval
+      escreval ("Digite o primeiro número: ")
+      leia     (x)
+      escreval ("Digite o segundo número: ")
+      leia     (y)
+
+      se (x % y = 0) ou (y % x = 0) entao
+         escreval ("Estes números SÃO multiplos.")
+      senao
+         escreval ("Estes números NÃO SÃO multiplos.")
+      fimse
+      
+Fimalgoritmo
