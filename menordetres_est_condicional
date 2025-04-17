@@ -1,0 +1,31 @@
+Algoritmo "problema_menorDeTres"
+
+Var
+
+   a, b, c, menor : inteiro
+
+Inicio
+
+      escreval ("BRASIL ESCOLA")
+      escreval ("Menor de 3")
+      escreval
+      escreval ("Digite o primeiro número: ")
+      leia     (a)
+      escreval ("Digite o segundo número: ")
+      leia     (b)
+      escreval ("Digite o terceiro número: ")
+      leia     (c)
+      
+      se (a < b) e (a < c) entao
+         menor <- a
+      senao
+         se (b < c) entao
+         menor <- b
+      senao
+         menor <- c
+         fimse
+      fimse
+      
+      escreval ("MENOR: ", menor)
+
+Fimalgoritmo
