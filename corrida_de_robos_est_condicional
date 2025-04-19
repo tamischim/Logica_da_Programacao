@@ -1,0 +1,28 @@
+Algoritmo "problema_corridaDeRobos"
+
+Var
+
+   pontuacao1, pontuacao2, pontuacaofinal : real
+   robo : caractere
+
+Inicio
+
+      escreval ("TECHDAY HACKATON")
+      escreval ("Corrida de Robôs")
+      escreval
+      escreva  ("Digite a pontuação da fase classificatória: ")
+      leia     (pontuacao1)
+      escreva  ("Digite a pontuação da fase final: ")
+      leia     (pontuacao2)
+      
+      pontuacaofinal <- pontuacao1 + pontuacao2
+      
+      escreval ("PONTUAÇÃO FINAL: ", pontuacaofinal:4:2)
+      
+      se pontuacaofinal <= 100.0 entao
+         escreval ("DESCLASSIFICADO!")
+      senao
+         escreval ("VENCEDOR!")
+      fimse
+
+Fimalgoritmo
