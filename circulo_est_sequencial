@@ -11,7 +11,7 @@ Inicio
       escreval ("Digite o valor de 'r': ")
       leia     (raio)
       
-      area     <- Pi * Exp(raio, 2.0)
+      area     <- Pi * raio * raio
       
       escreval ("Área do círculo: ", area:4:3)
 
