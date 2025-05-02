@@ -1,0 +1,31 @@
+Algoritmo "problema_crescente"
+
+Var
+
+      x, y   : inteiro
+      texto  : caractere
+
+Inicio
+
+      escreval("BRASIL ESCOLA")
+      escreval("Ordem Crescente ou Decrescente")
+      escreval
+      escreval("Digite dois números: ")
+      leia    (x)
+      leia    (y)
+      
+      enquanto x <> y faca
+      
+        se x < y entao
+          escreval ("Crescente!")
+        senao
+          escreval ("Decrescente!")
+        fimse
+        
+        escreval ("Digite outros dois números: ")
+        leia     (x)
+        leia     (y)
+        
+      fimenquanto
+      
+Fimalgoritmo
