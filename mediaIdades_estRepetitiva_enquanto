@@ -24,8 +24,6 @@ Inicio
           leia (idade)
           
       fimenquanto
-      
-      media <- idade / cont
 
       se cont = 0 entao
         escreva ("Impossível Calcular!")
