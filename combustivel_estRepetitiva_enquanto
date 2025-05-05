@@ -1,0 +1,49 @@
+Algoritmo "problema_combustivel"
+
+Var
+
+   cod, a, g, d : inteiro
+   
+Inicio
+
+      a <- 0
+      g <- 0
+      d <- 0
+      
+      escreval ("POSTO 2001")
+      escreval ("Combustível favorito!")
+      escreval
+      escreval  ("Digite 1 para Álcool")
+      escreval  ("Digite 2 para Gasolina")
+      escreval  ("Digite 3 para Diesel")
+      escreval  ("Digite 4 para finalizar seu atendimento")
+      escreval
+      escreval  ("Sua contribuição é muito importante!")
+      escreval
+      escreval ("Qual o combustível de sua preferência? ")
+      escreva  ("Informe o código: ")
+      leia (cod)
+        
+      enquanto cod <> 4 faca
+
+        escolha cod
+        caso 1
+         a <- a + 1
+        caso 2
+         g <- g + 1
+        caso 3
+         d <- d + 1
+        fimescolha
+        
+        escreva  ("Informe o código: ")
+        leia (cod)
+      fimenquanto
+      
+      escreval ("Muito obrigado!")
+      escreval
+      escreval ("Resultado")
+      escreval ("Álcool: ", a)
+      escreval ("Gasolina: ", g)
+      escreval ("Diesel: ", d)
+
+Fimalgoritmo
