@@ -1,0 +1,34 @@
+Algoritmo "problema_divisao"
+
+Var
+
+   i, n          : inteiro
+   x, y, divisao : real
+   
+Inicio
+
+      escreval ("BRASIL ESCOLA")
+      escreval ("Divisão")
+      escreval
+      escreva  ("Quantos casos você vai digitar? ")
+      leia     (n)
+      
+      para i de 1 ate n faca
+
+        escreva ("Digite o numerador: ")
+        leia    (x)
+        escreva ("Digite o denominador: ")
+        leia    (y)
+        
+      se y = 0 entao
+         escreval ("Divisão impossível!")
+      senao
+      
+         divisao <- x / y
+         
+         escreval ("Divisão: ", divisao:3:2)
+      fimse
+      
+     fimpara
+
+Fimalgoritmo
