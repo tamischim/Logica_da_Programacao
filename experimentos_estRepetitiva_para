@@ -1,0 +1,63 @@
+Algoritmo "problema_experiencias"
+
+Var
+
+   i, casos, cobaias, total, totalC, totalR, totalS : inteiro
+   perC, perR, perS                                 : real
+   tipoCobaia                                       : caractere
+
+Inicio
+
+      escreval ("UNIVERSIDADE FEDERAL DE SANTA MARIA - UFSM")
+      escreval ("Curso de Medicina - Experimentos")
+      escreval
+      escreva  ("Quantos casos de teste serão digitados? ")
+      leia     (casos)
+      
+      totalC <- 0
+      totalR <- 0
+      totalS <- 0
+      
+      para i de 1 ate casos faca
+      
+        escreva ("Quantidade de cobaias: ")
+        leia    (cobaias)
+        escreva ("Tipo de cobaia: ")
+        leia    (tipoCobaia)
+
+        se tipoCobaia = "C" entao
+        
+           totalC <- totalC + cobaias
+        
+        senao
+           se tipoCobaia = "R" entao
+           
+              totalR <- totalR + cobaias
+              
+           senao
+           
+              totalS <- totalS + cobaias
+
+           fimse
+        fimse
+        
+      fimpara
+      
+      
+      total <- totalC + totalR + totalS
+      
+      perC  <- totalC / total * 100
+      perR  <- totalR / total * 100
+      perS  <- totalS / total * 100
+      
+      escreval
+      escreval ("Relatório Final: ")
+      escreval ("Total de cobaias utilizadas: ", total)
+      escreval ("Total de Coelhos: ", totalC)
+      escreval ("Total de Ratos: ", totalR)
+      escreval ("Total de Sapos: ", totalS)
+      escreval ("Percentual de Coelhos: ", perC:3:2, "%")
+      escreval ("Percentual de Ratos: ", perR:3:2, "%")
+      escreval ("Percentual de Sapos: ", perS:3:2, "%")
+
+Fimalgoritmo
