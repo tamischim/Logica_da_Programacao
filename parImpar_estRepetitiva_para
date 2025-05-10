@@ -1,0 +1,38 @@
+Algoritmo "problema_parImpar"
+
+Var
+
+   i, n, x : inteiro
+
+Inicio
+
+      escreval ("BRASIL ESCOLA")
+      escreval ("Par ou ímpar, Negativo ou positivo")
+      escreval
+      escreva  ("Quantos números você vai digitar? ")
+      leia     (n)
+      
+      para i de 1 até n faca
+        escreva ("Digite um número: ")
+        leia    (x)
+      
+        se x = 0 entao
+           escreval ("Nulo")
+        senao
+           se x % 2 = 0 entao
+              se x < 0 entao
+                 escreval ("Par Negativo")
+              senao
+                 escreval ("Par Positivo")
+              fimse
+           senao
+              se x < 0 entao
+                 escreval ("Ímpar Negativo")
+              senao
+                 escreval ("Ímpar Positivo")
+              fimse
+           fimse
+        fimse
+      fimpara
+
+Fimalgoritmo
