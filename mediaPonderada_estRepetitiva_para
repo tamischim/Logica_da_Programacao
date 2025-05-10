@@ -1,0 +1,29 @@
+Algoritmo "problema_mediaPonderada"
+
+Var
+
+   i, n : inteiro
+   a, b, c, media: real
+   
+Inicio
+
+      escreval ("BRASIL ESCOLA")
+      escreval ("Média Ponderada")
+      escreval
+      escreva  ("Quantos casos você irá digitar? ")
+      leia     (n)
+      
+      para i de 1 até n faca
+      
+           escreval ("Digite três números: ")
+           leia     (a)
+           leia     (b)
+           leia     (c)
+           
+           media <- (a * 2 + b * 3 + c * 5) / 10
+           
+           escreval ("Média: ", media:2:1)
+           
+      fimpara
+      
+Fimalgoritmo
