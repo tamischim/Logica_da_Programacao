@@ -1,0 +1,25 @@
+Algoritmo "problema_fatorial"
+
+Var
+
+   i, n, fatorial : inteiro
+   
+Inicio
+
+      escreval ("BRASIL ESCOLA")
+      escreval ("Fatorial")
+      escreval
+      escreva  ("Digite o valor de n: ")
+      leia     (n)
+      
+      fat <- 1
+      
+      para i de 1 ate n faca
+      
+        fat <- fat * i
+        
+      fimpara
+      
+      escreval ("Fatorial: ", fat)
+
+Fimalgoritmo
