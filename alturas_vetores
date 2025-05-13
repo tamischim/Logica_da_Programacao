@@ -1,0 +1,56 @@
+Algoritmo "problema_alturas"
+
+Var
+
+   i, np, cont              : inteiro
+   soma, media, porcentagem : real
+   idade                    : vetor [0..9] de inteiro
+   altura                   : vetor [0..9] de real
+   nome                     : vetor [0..9] de caractere
+
+Inicio
+
+      escreval ("SISTEMA ÚNICO DE SAÚDE - SUS")
+      escreval ("Dados familiares")
+      escreval
+      escreva  ("Quantas pessoas fazem parte da família? ")
+      leia     (np)
+      
+      para i de 0 ate np-1 faca
+           escreval ("Dados da", i + 1, "a pessoa:")
+           escreva  ("Nome: ")
+           leia     (nome[i])
+           escreva  ("Idade: ")
+           leia     (idade[i])
+           escreva  ("Altura: ")
+           leia     (altura[i])
+      fimpara
+      
+      soma <- 0
+      
+      para i de 0 ate np-1 faca
+           soma <- soma + altura[i]
+      fimpara
+      
+      media <- soma / np
+      escreval
+      escreval ("Altura média: ", media:2:1)
+      
+      cont <- 0
+      para i de 0 ate np-1 faca
+           se idade[i] < 16 entao
+              cont <- cont + 1
+              nomes <- nome[i]
+           fimse
+      fimpara
+      
+      porcentagem <- cont * 100 / np
+      escreval ("Pessoas com menos de 16 anos: ", porcentagem:1:1, "%")
+      
+      para i de 0 ate np-1 faca
+           se idade[i] < 16 entao
+              escreval (nome[i])
+           fimse
+      fimpara
+
+Fimalgoritmo
