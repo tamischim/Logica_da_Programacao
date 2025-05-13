@@ -1,0 +1,30 @@
+Algoritmo "problema_negativos"
+
+Var
+
+   i, n : inteiro
+   vet  : vetor [0..9] de real
+   
+Inicio
+
+      escreval ("CALCULANDO")
+      escreval ("Negativos")
+      escreval
+      escreva  ("Quantos números você vai digitar? ")
+      leia     (n)
+      
+      para i de 0 ate n-1 faca
+           escreva ("Digite um número: ")
+           leia    (vet[i])
+      fimpara
+      
+      escreval
+      escreval ("Números digitados: ")
+      
+      para i de 0 ate n-1 faca
+           se vet[i] < 0 entao
+              escreval (vet[i])
+           fimse
+      fimpara
+      
+Fimalgoritmo
