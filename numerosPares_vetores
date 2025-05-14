@@ -1,0 +1,38 @@
+Algoritmo "problema_numerosPares"
+
+Var
+
+   i, n, soma : inteiro
+   vet  : vetor [0..9] de real
+   
+Inicio
+
+      escreval ("BRASIL ESCOLA")
+      escreval ("Números Pares")
+      escreval
+      escreval ("Quantos números você vai digitar? ")
+      leia     (n)
+      
+      para i de 0 ate n-1 faca
+           escreva ("Digite um número: ")
+           leia    (vet[i])
+      fimpara
+      
+      soma <- 0
+      
+      escreval ("Números pares: ")
+      
+      para i de 0 ate n-1 faca
+           
+           se vet[i] % 2 = 0 entao
+              escreva (vet[i], " ")
+              
+              soma <- soma + 1
+              
+           fimse
+      fimpara
+              
+      escreval
+      escreval ("Quantidade de números pares: ", soma)
+      
+Fimalgoritmo
