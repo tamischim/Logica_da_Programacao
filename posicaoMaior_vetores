@@ -1,0 +1,37 @@
+Algoritmo "maior_posição"
+
+Var
+
+   n, i, posicao : inteiro
+   maior         : real
+   vet           : vetor [0..99] de real
+   
+Inicio
+
+      escreval ("UNIVERSIDADE FEDERAL DE SANTA MARIA - UFSM")
+      escreval ("Curso de Matemática")
+      escreval ("Maior Valor")
+      escreval
+      escreval ("Quantos números você vai digitar? ")
+      leia     (n)
+      
+      para i de 0 ate n-1 faca
+           escreva ("Digite um número: ")
+           leia    (vet[i])
+      fimpara
+      
+      maior   <- vet[0]
+      posicao <- 0
+      
+      para i de 0 ate n-1 faca
+           se vet[i] > maior entao
+              maior   <- vet[i]
+              posicao <- i
+           fimse
+      fimpara
+      
+      escreval
+      escreval ("Maior valor: ", maior:2:1)
+      escreval ("Posição do maior valor: ", posicao)
+      
+Fimalgoritmo
