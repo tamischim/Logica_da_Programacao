@@ -1,0 +1,44 @@
+Algoritmo "problema_abaixoDaMedia"
+
+Var
+
+   i, n        : inteiro
+   media, soma : real
+   vet         : vetor [0..99] de real
+   
+Inicio
+
+      escreval ("UNIVERSIDADE FEDERAL DE SANTA MARIA - UFSM")
+      escreval ("Curso de Ciências da Computação")
+      escreval ("Média aritmética por Vetores")
+      escreval
+      escreva  ("Quantos elementos vai ter o vetor? ")
+      leia     (n)
+      
+      para i de 0 ate n-1 faca
+           escreva ("Digite um número: ")
+           leia (vet[i])
+      fimpara
+      
+      media <- 0
+      soma  <- 0
+      
+      para i de 0 ate n-1 faca
+      
+           soma  <- soma + vet[i]
+           media <- soma / n
+           
+      fimpara
+      
+      escreval
+      escreval ("Média do vetor: ", media:4:3)
+      
+      escreval ("Elementos abaixo da média: ")
+      
+      para i de 0 ate n-1 faca
+           se vet[i] < media entao
+              escreval (vet[i]:2:1)
+           fimse
+      fimpara
+
+Fimalgoritmo
