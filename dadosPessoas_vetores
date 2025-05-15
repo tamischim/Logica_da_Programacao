@@ -1,0 +1,69 @@
+Algoritmo "problema_dadosPessoas"
+
+Var
+
+   i, n, contM, contH: inteiro
+   maior, menor, soma, media : real
+   altura : vetor [0..99] de real
+   genero : vetor [0..99] de caractere
+   
+
+Inicio
+
+      escreval ("CENTRO DE ESPORTES COLETIVOS")
+      escreval ("Classificação altura - gênero")
+      escreval
+      escreva  ("Quantas pessoas serão digitadas? ")
+      leia     (n)
+
+      para i de 0 ate n-1 faca
+           escreva ("Altura da ", i+1, "a pessoa :")
+           leia    (altura[i])
+           escreva ("Gênero da ", i+1, "a pessoa: ")
+           leia    (genero[i])
+      fimpara
+      
+      menor <- altura[0]
+      maior <- altura[0]
+      
+      para i de 0 ate n-1 faca
+           se altura[i] > maior entao
+           
+              maior <- altura[i]
+
+           fimse
+           se altura [i] < menor entao
+
+              menor <- altura[i]
+              
+           fimse
+      fimpara
+      
+      escreval
+      escreval ("Menor altura: ", menor:4:2)
+      escreval ("Maior altura: ", maior:4:2)
+      
+      soma <- 0
+      contM <- 0
+      
+      para i de 0 ate n-1 faca
+           se genero[i] = "F" entao
+              soma <- soma + altura[i]
+              contM <- contM + 1
+           fimse
+      fimpara
+      
+      se contM = 0 entao
+         escreval ("Impossível calcular a média das alturas das mulheres.")
+      senao
+      
+         media <- soma / contM
+         
+         escreval ("Média da altura das Mulheres: ", media:4:2)
+      fimse
+      
+      contH <- n - contM
+      
+      escreval ("Número de homens: ", contH)
+      
+Fimalgoritmo
