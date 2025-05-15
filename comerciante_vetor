@@ -1,0 +1,77 @@
+Algoritmo "problema_comerciante"
+
+Var
+
+   n, i, abaixo, entre, acima   : inteiro
+   totalC, totalV, totalL, lucro, percLucro : real
+   precoC : vetor [0..99] de real
+   precoV : vetor [0..99] de real
+   nome   : vetor [0..99] de caractere
+
+Inicio
+
+      escreval ("RESTAURANTE E LANCHERIA GALPÃO")
+      escreval ("Relatório de compra")
+      escreval
+      escreva  ("Serão digitados dados de quantos produtos? ")
+      leia     (n)
+      
+      para i de 0 ate n-1 faca
+           escreval
+           escreval ("PRODUTO ", i+1)
+           escreva  ("Nome: ")
+           leia     (nome[i])
+           escreva  ("Preço de compra: ")
+           leia     (precoC[i])
+           escreva  ("Preço de venda: ")
+           leia     (precoV[i])
+      fimpara
+      
+      abaixo <- 0
+      entre <- 0
+      acima <- 0
+      
+      para i de 0 ate n-1 faca
+      
+           lucro <- precoV[i] - precoC[i]
+           percLucro <- lucro * 100.0 / precoC[i]
+           
+           se percLucro < 10 entao
+           
+              abaixo <- abaixo + 1
+              
+           senao
+              se percLucro <= 20 entao
+              
+                 entre <- entre + 1
+                 
+              senao
+              
+                 acima <- acima + 1
+                 
+              fimse
+           fimse
+      fimpara
+      
+      totalC <- 0
+      totalV <- 0
+
+      para i de 0 ate n-1 faca
+
+           totalC <- totalC + precoC[i]
+           totalV <- totalV + precoV [i]
+           
+      fimpara
+      
+      totalL <- totalV - totalC
+      
+      escreval
+      escreval ("RELATÓRIO FINAL")
+      escreval ("Lucro abaixo de 10%: ", abaixo)
+      escreval ("Lucro entre 10% e 20%: ", entre)
+      escreval ("Lucro acima de 10%: ", acima)
+      escreval ("Valor total de compra: ", totalC:4:2)
+      escreval ("Valor total de venda: ", totalV:4:2)
+      escreval ("Lucro total: ", totalL:4:2)
+      
+Fimalgoritmo
