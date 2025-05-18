@@ -1,0 +1,25 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+		inteiro qntlatas
+		real largura, comprimento, area, preco, custototal
+		
+		escreva ("Digite a largura da área a ser pintada: ")
+		leia (largura)
+		escreva ("Digite o comprimento da área a ser pintada: ")
+		leia (comprimento)
+		escreva ("Digite o preço da lata de tinta: ")
+		leia (preco)
+
+		area = largura * comprimento
+		qntlatas = area * 1 / 15
+		custototal = qntlatas * preco
+
+		escreva ("Quantidade de latas a serem utilizadas: ", qntlatas)
+		escreva ("Custo total: ", custototal)
+		
+	}
+}
