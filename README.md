@@ -1,6 +1,6 @@
  <h1 align="center">🖥️ Estudos de Algoritmos e Lógica da Programação</h1>
  
-**`Portugol`**
+Linguagens: **`Portugol`**
 
 ## IDE's utilizadas: 
 <img 
